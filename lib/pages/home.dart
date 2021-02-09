@@ -10,7 +10,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    data = data.isNotEmpty ? data : ModalRoute.of(context).settings.arguments;
+    data = data.isNotEmpty ? date : ModalRoute.of(context).settings.arguments;
 
     Color bgColor = data['isDaytime'] ? Colors.blue : Colors.grey[900];
     Color textColor = data['isDaytime'] ? Colors.black : Colors.white;
